@@ -54,10 +54,10 @@ func main(){
 			end := time.Now()
 			if isWas {
 				fmt.Println("Швидкість реакції:", end.Sub(start))
+				time.Sleep(4 * time.Second)
 			} else {
 				fmt.Println("Такого символа ще не було!")
 			}
-			time.Sleep(4 * time.Second)
 			isPress = true
 		}
 	}()
